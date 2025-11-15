@@ -1,0 +1,22 @@
+aside {
+  background-image: url(assets/Background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  & .aside-container {
+    max-width: 25rem;
+    padding: 2rem;
+
+    & h1 {
+      color: #FF598B;
+      padding-top: 1rem;
+      font-size: 2,5rem; 
+      font-family: "Leckerli One", cursive;
+      font-weight: 400;
+    }
+
+    & h2 {
+      font: 300 1rem var(--font-family-body);
+    }
+  }
+}
