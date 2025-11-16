@@ -39,4 +39,9 @@ body {
 .flex {
   display: flex;
   gap: 1rem;
+  width: 100%;
+}
+
+.flex .input-wrapper {
+  flex: 1;  
 }

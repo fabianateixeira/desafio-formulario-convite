@@ -42,8 +42,9 @@ fieldset {
 .color-picker {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
 }
 
 
@@ -85,3 +86,92 @@ fieldset {
 
 }
 
+.radio-wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .5rem;
+
+}
+
+.radio-inner {
+
+  background-color: var(--shape-button);
+  border-radius: .5rem;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  gap: .5rem;
+  padding: 4px;
+  position: relative;
+
+  & img {
+  width: 100%;
+  object-fit: cover;
+}
+
+  & label {
+    margin-bottom: 3px;
+  }
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all : unset;
+    position: absolute;
+    inset: 0;
+  }
+
+}
+
+.radio-wrapper2 input:checked {
+    border: 3px solid #4aa8ff;
+    border-radius: .5rem;
+
+}
+
+.type-options {
+  display: flex;
+  gap: 2px;
+  width: 100%;
+  appearance: none;
+  width: 100%;
+  border-radius: .5rem;
+  border: 1px solid var(--input-stroke);
+  padding: 3px;
+  font: var(--font-family-body);
+  background-color: var(--input-base);
+}
+
+.type-button {
+  flex: 1;                            
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  justify-content: center;
+
+  border: 1px solid var(--stroke-default);
+  border-radius: .5rem;
+  padding: 10.5px;
+  cursor: pointer;
+
+  position: relative;
+  user-select: none;
+}
+
+/* remover o radio original */
+.type-button input {
+  all: unset;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+
+/* estilo quando selecionado */
+.type-button:has(input:checked) {
+  background: var(--shape-button);
+}
+
+.type-button:has(input:checked) span {
+  font-weight: 600;
+}
