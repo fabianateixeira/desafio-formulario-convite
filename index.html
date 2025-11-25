@@ -174,7 +174,7 @@
                 </div>
               </div>
 
-              <div class="input-wrapper">
+            <div class="input-wrapper">
                 <label for="event-theme">Tema do evento</label>
 
                 <div class="radio-wrapper2">
@@ -252,11 +252,27 @@
                   </div>
 
                   </div>
-                  </div>
-                  </div>
+            </div>
+
+            <div class="row">
+              <div class="input-wrapper">
+                <label for="style">Estilo</label>
+                <div class="theme-toggle">
+                  <label class="switch">
+                    <input type="checkbox" id="themeSwitch" />
+                    <span class="slider"></span>
+                  </label>
+
+                  <span id="themeLabel">Escuro</span>
+                </div>
               </div>
             </div>
           </fieldset>
+      
+      </div>
+
+        
+          
 
 
 
@@ -269,5 +285,14 @@
     </main>
 
   </div>
+
+  <script>
+    const cb = document.getElementById("themeSwitch");
+    const label = document.getElementById("themeLabel");
+
+    cb.addEventListener("change", () => {
+      label.textContent = cb.checked ? "Claro" : "Escuro";
+    });
+  </script>
 </body>
 </html>

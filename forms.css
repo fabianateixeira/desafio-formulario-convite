@@ -35,6 +35,7 @@ fieldset {
   padding: .75rem 1rem;
   font: var(--font-family-body);
   background-color: var(--input-base);
+  color: var(--text-heading);
 }
 }
 
@@ -174,4 +175,13 @@ fieldset {
 
 .type-button:has(input:checked) span {
   font-weight: 600;
+}
+
+fieldset label.type-button {
+  margin-bottom: 0;
+}
+
+.input-wrapper {
+  margin: 0;
+  padding: 0;
 }
