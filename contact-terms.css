@@ -7,3 +7,27 @@
   margin-top: 3rem;
 
 }
+
+.checkbox-hidden {
+  display: none;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: .75rem;
+  font-size: 14px;
+}
+
+.custom-checkbox .checkbox-visual {
+  content: '';
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 6px;
+  margin-right: 8px;
+  border: 2px solid var(--input-stroke);
+  background: var(--input-base);
+  transition: all 0.3s ease; 
+}
