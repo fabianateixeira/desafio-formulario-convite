@@ -1,0 +1,23 @@
+#file-upload {
+  display: none;
+}
+
+.custom-file-upload {
+  display: flex;
+  gap: 0.5rem;
+  background-color: var(--shape-button);
+  cursor: pointer;
+  color: var(--text-heading);
+  padding: 10.5px 12px;
+  border-radius: 0.5rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cover-pic {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--input-placeholder);
+  font-size: 1rem;
+}

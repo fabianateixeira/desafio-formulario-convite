@@ -19,6 +19,8 @@ fieldset {
    & legend {
     font-size: 1.125rem;
     padding-bottom: 1.5rem;
+    display: flex;
+    gap: .75rem;
   }
 
   & label {
@@ -37,6 +39,10 @@ fieldset {
   background-color: var(--input-base);
   color: var(--text-heading);
 }
+}
+
+fieldset + fieldset {
+  margin-top: 3rem;
 }
 
 /* bolinhas */
@@ -184,4 +190,10 @@ fieldset label.type-button {
 .input-wrapper {
   margin: 0;
   padding: 0;
+}
+
+.row {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
