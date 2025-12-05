@@ -198,8 +198,23 @@ fieldset label.type-button {
   justify-content: space-between;
 }
 
-.submit-button {
-  background-color: var(--brand-dark);
+button[type=submit]{
+  background-color: #1D6FB6;
   border-radius: 8px;
+  color: var(--text-heading);
+  cursor: pointer;
+  padding-block: 0.875rem;
+  padding-inline: 1.25rem;
+  border: none;
+  display: flex;
+  margin-left: auto;
+  margin-top: 3rem;
+}
+
+.submit-button {  
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 16px;
   color: var(--text-heading);
 }
