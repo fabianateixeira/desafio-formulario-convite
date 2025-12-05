@@ -197,3 +197,9 @@ fieldset label.type-button {
   display: flex;
   justify-content: space-between;
 }
+
+.submit-button {
+  background-color: var(--brand-dark);
+  border-radius: 8px;
+  color: var(--text-heading);
+}
